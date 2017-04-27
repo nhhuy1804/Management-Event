@@ -14,6 +14,10 @@
 		F6B887E81EB22FF400024C72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B887E61EB22FF400024C72 /* LaunchScreen.storyboard */; };
 		F6B887F31EB22FF400024C72 /* Management_EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B887F21EB22FF400024C72 /* Management_EventTests.swift */; };
 		F6B887FE1EB22FF400024C72 /* Management_EventUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B887FD1EB22FF400024C72 /* Management_EventUITests.swift */; };
+		F6B8880C1EB2319300024C72 /* ManagementEventTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8880B1EB2319300024C72 /* ManagementEventTableViewController.swift */; };
+		F6B888111EB2324100024C72 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B8880F1EB2324100024C72 /* Event.swift */; };
+		F6B888121EB2324100024C72 /* EventLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B888101EB2324100024C72 /* EventLine.swift */; };
+		F6B888141EB239FB00024C72 /* EventDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B888131EB239FB00024C72 /* EventDetailTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		F6B887F91EB22FF400024C72 /* Management EventUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Management EventUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B887FD1EB22FF400024C72 /* Management_EventUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Management_EventUITests.swift; sourceTree = "<group>"; };
 		F6B887FF1EB22FF400024C72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6B8880B1EB2319300024C72 /* ManagementEventTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagementEventTableViewController.swift; sourceTree = "<group>"; };
+		F6B8880F1EB2324100024C72 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F6B888101EB2324100024C72 /* EventLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventLine.swift; sourceTree = "<group>"; };
+		F6B888131EB239FB00024C72 /* EventDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,8 @@
 		F6B887DC1EB22FF300024C72 /* Management Event */ = {
 			isa = PBXGroup;
 			children = (
+				F6B8880E1EB2321E00024C72 /* Models */,
+				F6B8880D1EB231AC00024C72 /* Controllers */,
 				F6B887DD1EB22FF300024C72 /* AppDelegate.swift */,
 				F6B887DF1EB22FF300024C72 /* ViewController.swift */,
 				F6B887E11EB22FF400024C72 /* Main.storyboard */,
@@ -123,6 +133,24 @@
 				F6B887FF1EB22FF400024C72 /* Info.plist */,
 			);
 			path = "Management EventUITests";
+			sourceTree = "<group>";
+		};
+		F6B8880D1EB231AC00024C72 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8880B1EB2319300024C72 /* ManagementEventTableViewController.swift */,
+				F6B888131EB239FB00024C72 /* EventDetailTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		F6B8880E1EB2321E00024C72 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6B8880F1EB2324100024C72 /* Event.swift */,
+				F6B888101EB2324100024C72 /* EventLine.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B888121EB2324100024C72 /* EventLine.swift in Sources */,
+				F6B888111EB2324100024C72 /* Event.swift in Sources */,
 				F6B887E01EB22FF300024C72 /* ViewController.swift in Sources */,
+				F6B888141EB239FB00024C72 /* EventDetailTableViewController.swift in Sources */,
+				F6B8880C1EB2319300024C72 /* ManagementEventTableViewController.swift in Sources */,
 				F6B887DE1EB22FF300024C72 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
